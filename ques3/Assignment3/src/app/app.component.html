@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form (ngSubmit)="onSubmit()">
+      
+        <div class="container" >
+          
+          <div class="row">
+            
+              <input type="text" name ="phno1" placeholder="Phone Number" #data.phno1="ngModel" [(ngModel)]="data.phno1" >
+            
+          </div>
+
+          <div class="row">
+            <button type="submit">Add another phone number</button>
+          </div>
+
+          
+          <div class="row">
+            <button type="submit">Submit</button>
+          </div>
+        
+
+        </div>
+      </form>
+  </body>
